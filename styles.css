@@ -7,7 +7,110 @@
 :root{
     --main-color: #082565;
 }
+/* استايل عام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+/* تنسيق الهيدر */
+header {
+    background: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* تنسيق الشعار بجانب النص */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* مسافة بين الشعار والنص */
+}
+
+/* تنسيق الشعار */
+.logo-title img {
+    width: 60px;
+    height: 60px;
+}
+
+/* تنسيق النص */
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #1a3d5d;
+    margin: 0;
+}
+
+/* الخط الفاصل بين النص */
+.title hr {
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid #1a3d5d;
+}
+
+/* النص السفلي */
+.title h3 {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+/* الخلفية */
+main {
+    position: relative;
+    height: 100vh;
+    background: url('Photos/background.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تأثير التظليل */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.6);
+}
+
+/* صندوق المحتوى */
+.container {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -159,3 +262,4 @@ button:hover {
 .links a:hover {
     text-decoration: underline;
 }
+
