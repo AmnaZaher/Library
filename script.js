@@ -7,3 +7,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
     }
 });
+
+function navigateToLogin(userType) {
+    window.location.href = "index.html?type=" + userType;
+}
