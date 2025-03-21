@@ -9,5 +9,5 @@ document.querySelector('form').addEventListener('submit', function(e) {
 });
 
 function navigateToLogin(userType) {
-    window.location.href = "index.html?type=" + userType;
+    window.location.href = "login.html?type=" + userType;
 }
