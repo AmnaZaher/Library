@@ -61,6 +61,19 @@ header {
     margin: 0;
 }
 
+/* تنسيق صندوق الترحيب */
+.welcome-box {
+    text-align: center;
+}
+
+/* تنسيق الخط الفاصل */
+.separator {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+
+
 /* الخلفية */
 main {
     position: relative;
@@ -263,4 +276,3 @@ button:hover {
 .links a:hover {
     text-decoration: underline;
 }
-
