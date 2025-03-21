@@ -3,7 +3,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault(); // منع الإرسال الافتراضي للنموذج
     
     // إعادة توجيه المستخدم إلى الصفحة المطلوبة
-    window.location.href = "search.html"; // استبدلي "your-page.html" بالصفحة المطلوبة
+    window.location.href = "search.html"; 
 });
 
 //index java
