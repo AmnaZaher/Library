@@ -1,0 +1,34 @@
+body {
+    background: url('Photos/bgMember.png') no-repeat center center/cover;
+    font-family: Alexandria, sans-serif;
+    color: #fff;
+}
+h2 {
+    font-family: Baskervville, serif;
+}
+.signup-card {
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.image-section {
+    width: 50%;
+    background: url('Photos/SignMember.png') no-repeat center center/cover;
+}
+.form-section {
+    width: 50%;
+}
+.custom-btn {
+    background-color: #704177;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.custom-btn:hover {
+    background-color: #5a3361;
+}
