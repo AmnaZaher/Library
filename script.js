@@ -53,7 +53,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     // If the form is valid, redirect to my_account.html
     if (isFormValid) {
-        window.location.href = 'my_account.html'; // Redirect to the my_account.html page
+        window.location.href = 'search.html'; // Redirect to the my_account.html page
     } else {
         alert('Please fill out all the fields and agree to the terms.');
     }
