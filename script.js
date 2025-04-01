@@ -9,11 +9,6 @@ function navigateToLogin(page) {
     }
 }
 
-//index java
-
-function navigateToLogin(userType) {
-    window.location.href = "login.html?type=" + userType;
-}
 
 //SignUp Member
 
