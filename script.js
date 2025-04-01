@@ -1,10 +1,13 @@
 //login java
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault(); // منع الإرسال الافتراضي للنموذج
-    
-    // إعادة توجيه المستخدم إلى الصفحة المطلوبة
-    window.location.href = "search.html"; 
-});
+function navigateToLogin(page) {
+    if (page === 'Admin') {
+        window.location.href = 'SignAdmin.html'; // توجيه إلى صفحة الإدارة
+    } else if (page === 'Member') {
+        window.location.href = 'SignMember.html'; // توجيه إلى صفحة الأعضاء
+    } else if (page === 'Student') {
+        window.location.href = 'SignStudent.html'; // توجيه إلى صفحة الطلاب
+    }
+}
 
 //index java
 
