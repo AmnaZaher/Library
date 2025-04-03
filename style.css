@@ -166,7 +166,7 @@
     position: relative;
   }
   
-  .nav-link {
+  .nav-link{
     display: flex;
     align-items: center;
     padding: 15px 20px;
@@ -188,6 +188,11 @@
   
   .nav-link:hover {
     background-color: #f8f9fa;
+  }
+
+  .dropdown {
+    background-color: white;
+    border-radius: 10px;
   }
   
   .dropdown-menu {
@@ -444,6 +449,10 @@
 /* Team member card */
 .team-member {
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 .member-image {
@@ -454,9 +463,15 @@
 }
 
 .member-image img {
+    transition: transform 0.3s ease-in-out;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.team-member:hover img {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .member-name {
@@ -577,3 +592,192 @@
     }
 }
 
+/*Book*/
+
+.book-carousel {
+    background: linear-gradient(to bottom, white 50%, #0a2a66 50%);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+
+.carousel-header {
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 20px;
+}
+
+.carousel-header h2 {
+    font-size: 24px;
+}
+
+.see-all {
+    text-align: right;
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.swiper-container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 150px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+}
+
+
+.swiper-pagination {
+    position: relative;
+    bottom: -10px;
+}
+
+
+.book-carousel::after {
+    content: "";
+    display: block;
+    height: 80px;
+    background: #0a2a66;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* Footer */
+.footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0c2a5d;
+    background-image: linear-gradient(rgba(12, 42, 93, 0.9), rgba(12, 42, 93, 0.9)), url('photos - Copy/photos - Copy/Screenshot 2025-03-25 025639.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 0 20px;
+    position: relative;
+}
+
+.footer-hr {
+    width: 50%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 250px;
+    padding-right: 20px;
+}
+
+/* About section */
+.about .footer-logo {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.about .university {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.about .description {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* Contact and Member sections */
+.section-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.social-links, .member-links {
+    list-style: none;
+}
+
+.social-links li, .member-links li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.social-links i, .member-links i {
+    font-size: 6px;
+    margin-right: 10px;
+}
+
+.social-links a, .member-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-links a:hover, .member-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
