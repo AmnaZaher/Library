@@ -91,7 +91,9 @@
                 <div class="nav-menu">
                     <ul>
                         <li class="nav-items">
-                            <a href="#" class="nav-links">KEYWORD <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="nav-links" style="color: #0c2a5d;">KEYWORD <i class="fas fa-chevron-down"></i></a>
+                            </div>
                             <ul class="dropdown-menu">
                                 <li><a href="#title">Title</a></li>
                                 <li><a href="#subject">Subject</a></li>
@@ -190,6 +192,83 @@
             </div>
         </div>
     </main>
+
+    <!--Book-->
+    <section class="book-carousel">
+        <div class="carousel-header">
+            <a href="#" class="see-all">SEE ALL →</a>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="photos - Copy/photos - Copy/AI (1).jpeg" alt="Information Technology">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos - Copy/photos - Copy/ML.jpeg" alt="Machine Learning">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos - Copy/photos - Copy/CS.jpeg" alt="Computer Science">
+                </div>
+                <div class="swiper-slide">
+                    <img src="photos - Copy/photos - Copy/gate.jpeg" alt="GATE">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="footer-logo">Student library</h2>
+                <hr class="footer-hr">
+                <p class="university">SVNU</p>
+                <p class="description">
+                    A haven of knowledge where you can find comprehensive resources, detailed 
+                    explanations, and a wide selection of books to support your learning journey.
+                </p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h2 class="section-title">Stay in touch | Contact us</h2>
+                <ul class="social-links">
+                    <li><i class="fas fa-circle fa-xs"></i> <a href="#">Instagram</a></li>
+                    <li><i class="fas fa-circle fa-xs"></i> <a href="#">Facebook</a></li>
+                    <li><i class="fas fa-circle fa-xs"></i> <a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section member">
+                <h2 class="section-title">Member Information</h2>
+                <ul class="member-links">
+                    <li><i class="fas fa-circle fa-xs"></i> <a href="#">Resources for member</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Report Accessibility Issues and Get Help</a>
+                <a href="#">Emergency Services</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="search.js"></script>
 
 </body>
 
