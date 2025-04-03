@@ -13,7 +13,7 @@ function navigateToLogin(page) {
 //SignUp Member,student,admin
 
 document.addEventListener('DOMContentLoaded', function () {
-    const currentPage = window.location.pathname.split('/').pop(); // Get the current page file name
+    const currentPage = window.location.pathname.split('/').pop(); // Get the current page filename
 
     let redirectPage = '';
 
@@ -36,10 +36,10 @@ function handleFormSubmission(redirectPage) {
         
         const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="password"]');
         const termsCheckbox = document.querySelector('#terms');
-        const photoInput = document.querySelector('#personalImage');
+        const photoInput = document.querySelector('#personalImage'); // Only exists on SignMember.html
         let isFormValid = true;
 
-        // Validate inputs
+        // Validate input fields (text, email, phone, password)
         inputs.forEach(input => {
             if (input.value.trim() === '') {
                 isFormValid = false;
@@ -49,22 +49,24 @@ function handleFormSubmission(redirectPage) {
             }
         });
 
-        // Validate terms agreement
-        if (!termsCheckbox.checked) {
+        // Validate terms checkbox
+        if (!termsCheckbox || !termsCheckbox.checked) {
             isFormValid = false;
             alert('You must agree to the terms and conditions.');
         }
 
-        // Validate image upload
-        if (photoInput.files.length === 0) {
-            isFormValid = false;
-            alert('Please upload a photo.');
-        } else {
-            const file = photoInput.files[0];
-            const allowedTypes = ['image/jpeg', 'image/png'];
-            if (!allowedTypes.includes(file.type)) {
+        // Validate image upload only for SignMember (SignAdmin & SignStudent do not have this field)
+        if (photoInput) {
+            if (photoInput.files.length === 0) {
                 isFormValid = false;
-                alert('Please upload a valid image file (JPEG, PNG).');
+                alert('Please upload a photo.');
+            } else {
+                const file = photoInput.files[0];
+                const allowedTypes = ['image/jpeg', 'image/png'];
+                if (!allowedTypes.includes(file.type)) {
+                    isFormValid = false;
+                    alert('Please upload a valid image file (JPEG, PNG).');
+                }
             }
         }
 
