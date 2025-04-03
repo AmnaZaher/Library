@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Library - SVNU</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="Photos/logo.jpeg" alt="SVNU Logo" class="logo">
+                        <div class="logo-text">
+                            <h1>Student library</h1>
+                            <hr>
+                            <p>SVNU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-section">
+                    <div class="icon-link">
+                        <a href="home.html"><i class="fa-solid fa-house" style="color: #0c2a5d;"></i></a>
+                        <a href="my_account.html"><i class="fa-solid fa-user" style="color: #0c2a5d;"></i></a>
+                    </div>
+                    <div class="link">
+                        <a href="my_account.html">MY ACCOUNT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation menu -->
+    <nav class="main-nav">
+        <div class="container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TOP RATED <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">E-Books</a></li>
+                        <li><a href="#">Materials</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">LEARNING&TECH <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Computer Science</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">SERVICES <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Upload File</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="network-background">
+            <div class="network-animation"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="upload-card animate-fade-in">
+                        <div class="user-info">
+                            <div class="user-avatar">
+                                <img src="Photos/Amna.jpeg" alt="User Avatar">
+                            </div>
+                            <div class="user-name">
+                                Mohamed
+                            </div>
+                        </div>
+                        
+                        <form id="uploadForm">
+                            <div class="upload-area" id="dropZone">
+                                <div class="upload-icon">
+                                    <span>Upload</span>
+                                    <i class="fas fa-file-upload"></i>
+                                </div>
+                                <input type="file" id="fileInput" class="file-input">
+                                <div id="fileInfo" class="file-info"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fileName" placeholder="File name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea class="form-control" id="summary" placeholder="Summary"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="keyword" placeholder="Keyword">
+                            </div>
+                            
+                            <div class="form-group category-group">
+                                <button type="button" class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <select class="form-select" id="category">
+                                    <option selected disabled>List</option>
+                                    <option value="books">Books</option>
+                                    <option value="articles">Articles</option>
+                                    <option value="research">Research Papers</option>
+                                    <option value="notes">Notes</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
